@@ -1,36 +1,56 @@
 body{
-    background-image: url(Wallpaper.jpg);
+    background-image: url(Wallpaper.png);
     background-repeat: repeat-x;
-    background-attachment:scroll;
+    background-attachment: scroll;
+    background-size: cover;
     margin: 0%;
-    color:rgb(255, 255, 255)
+    color: rgb(255, 255, 255);
+    font-family: Metal Mania;
+}
+/*Banderole avec titre et artiste*/
+    #logo {
+        position: relative;
+        width: 100%;
+    }
+
+    #title{
+        position:absolute;
+        left: 2%;
+        top: -5%;
+        font-family:Rubik Burned;
+        font-size: 6.5em;
+    }
+
+    #artist{
+        position:absolute;
+        Right: 2%;
+        top: -3%;
+        text-align: right;
+        font-size: 4em;
+        list-style-type: none;
+        font-family:Rubik Burned;
 }
 
-#logo {
-    position:relative;
-    width: 100%;
+#cover{
+    position: relative;
+    width: 25%;
+    right: 5%;
+    margin-top: -2%;
 }
 
-#entete {
-    position: inherit;
+h2{
+    text-align: center;
+    font-size: 600%;
+    margin-bottom: -1%;
+    font-family: Rubik Burned;
 }
 
-#title{
-    position:absolute;
-    left: 2%;
-    top: -5%;
-    font-family:Rubik Burned;
-    font-size: 6.5em;
-    color:#FFFFFF;
+h3{
+    text-align: center;
+    font-size: 150%;
 }
 
-#artist{
-    position:absolute;
-    Right: 2%;
-    top: -3%;
-    text-align: right;
-    font-size: 4em;
-    list-style-type: none;
-    font-family:Rubik Burned;
-    color: white;
+.morceaux{
+    font-size: 2.5em;
+    margin-left: 40%;
 }
