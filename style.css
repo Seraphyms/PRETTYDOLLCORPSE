@@ -11,7 +11,7 @@ body{
 #entete{
     display:flex;
     flex-wrap: wrap;
-    background-image: url(backTitleLil.jpg);
+    background-image: url(backTitle.jpg);
     background-size: cover;
 }
 
@@ -34,8 +34,6 @@ body{
 #cover{
     position: relative;
     width: 25%;
-    right: 5%;
-    margin-top: -2%;
 }
 
 h3{
