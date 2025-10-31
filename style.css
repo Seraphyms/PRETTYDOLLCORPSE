@@ -6,6 +6,7 @@ body{
     margin: 0%;
     color: rgb(255, 255, 255);
     font-family: Metal Mania;
+    text-align: center;
 }
 
 /*Banderole avec titre et artiste*/
@@ -42,26 +43,29 @@ header {
 }
 
 h3{
-    text-align: center;
     font-size: 600%;
     font-family: Rubik Burned;
+    margin-bottom: -3%;
 }
 
 h4{
-    text-align: center;
     font-size: 150%;
 }
 
 .morceaux{
-    font-size: 2.5em;
-    margin-left: 40%;
+    display: inline-block;
+    text-align: left;
+    list-style-position: outside;
+    padding-left: 1.2em;
+    margin: 0 auto;
+    font-size: 2em;
+    list-style: georgian;
 }
 
 #albums{
     margin: 2em;
     display: flex;
     flex-wrap: wrap;
-    /*justify-content: space-around;*/
     justify-content: center;
     gap: 80px;
 }
@@ -72,7 +76,6 @@ h4{
 }
 
 footer {
-    text-align: center;
     padding: 1em;
     background-color: rgba(0, 0, 0, 0.5);
     /*font-family: Rubik Burned;*/
