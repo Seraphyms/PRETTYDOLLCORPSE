@@ -1,5 +1,5 @@
 body{
-    background-image: url(Wallpaper.png);
+    background-image: url(Pics/Wallpaper.png);
     background-repeat: repeat-x;
     background-attachment: scroll;
     background-size: cover;
@@ -11,7 +11,7 @@ body{
 #entete{
     display:flex;
     flex-wrap: wrap;
-    background-image: url(backTitle.jpg);
+    background-image: url(Pics/backTitle.jpg);
     background-size: cover;
 }
 
