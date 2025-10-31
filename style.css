@@ -10,8 +10,11 @@ body{
 
 /*Banderole avec titre et artiste*/
 header {
+    padding-left: 1em;
+    padding-right: 1em;
     display:flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     background-image: url(Pics/backTitle.jpg);
     background-size: cover;
 }
@@ -23,10 +26,11 @@ header {
 }
 
 #artist{
-    display: flexbox;
-    flex-wrap: wrap;
     text-align: right;
-    right: -3%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.5em;
     font-size: 250%;
     list-style-type: none;
     font-family: Rubik Burned;
