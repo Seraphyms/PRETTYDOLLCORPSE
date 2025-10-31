@@ -4,45 +4,61 @@ body{
     background-attachment: scroll;
     background-size: cover;
     margin: 0%;
-    color: rgb(255, 255, 255);
+    color:rgb(217, 217, 217);
     font-family: Metal Mania;
     text-align: center;
 }
 
 /*Banderole avec titre et artiste*/
-header {
-    padding-left: 1em;
-    padding-right: 1em;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-image: url(Pics/backTitle.jpg);
-    background-size: cover;
+    header {
+        padding-left: 1em;
+        padding-right: 1em;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-image: url(Pics/backTitle.jpg);
+        background-size: cover;
+    }
+
+    #title{
+        font-family:Rubik Burned;
+        font-size: 400%;
+        text-align: left;
+        margin-bottom: 0em;
+        padding-bottom: 0em;
+        margin-top: 0em;
+        padding-top: 0.15em;
+    }
+
+    #artist {
+        text-align: right;
+        margin-bottom: 0em;
+        padding-bottom: 0em;
+        margin-top: 0em;
+        margin-top: 0em;
+        font-size: 250%;
+        list-style-type: none;
+        font-family: Rubik Burned;
+    }
+
+    #artist p {
+        margin: 0.2em 0;
+    }
+
+.Description {
+    font-size: 2em;
+    background: radial-gradient( rgba(255, 0, 0, 0.226) 30%, rgba(0, 0, 0, 0.498) 70%);
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
-#title{
-    font-family:Rubik Burned;
-    font-size: 400%;
-    text-align: left;
+
+.morceaux li, h1, .album-image, #artist p {
+    transition: transform 0.5s ease-in-out;
 }
 
-#artist {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    text-align: right;
-    font-size: 250%;
-    list-style-type: none;
-    font-family: Rubik Burned;
-}
-
-#artist p {
-    /*margin-top: 0;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 0.2em;*/
-
-    /* same as shorthand below */
-    margin: 0.2em 0;
+.morceaux li:hover, h1:hover, .album-image:hover, #artist p:hover {
+  transform: scale(1.03);
 }
 
 #cover{
