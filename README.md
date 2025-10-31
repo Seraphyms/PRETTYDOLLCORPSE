@@ -1,1 +1,5 @@
+# PRETTYDOLLCORPSE
+
+Responsive website in html / css
+
 uwu
