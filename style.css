@@ -11,7 +11,7 @@ body{
 #entete{
     display:flex;
     flex-wrap: wrap;
-    background-image: url(backTitleLil.jpg);
+    background-image: url(backTitle.jpg);
     background-size: cover;
 }
 
