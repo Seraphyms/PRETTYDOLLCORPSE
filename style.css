@@ -54,7 +54,7 @@ h4{
 }
 
 #albums{
-    margin: 40px;
+    margin: 2em;
     display: flex;
     flex-wrap: wrap;
     /*justify-content: space-around;*/
@@ -63,6 +63,6 @@ h4{
 }
 
 .album-image{
-    width: 350px;
+    width: 20em;
     margin-bottom: 2%;
 }
