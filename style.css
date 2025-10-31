@@ -7,28 +7,29 @@ body{
     color: rgb(255, 255, 255);
     font-family: Metal Mania;
 }
+
 /*Banderole avec titre et artiste*/
-#entete{
+header {
     display:flex;
     flex-wrap: wrap;
     background-image: url(Pics/backTitle.jpg);
     background-size: cover;
 }
 
-    #title{
-        font-family:Rubik Burned;
-        font-size: 400%;
-        text-align: left;
-    }
+#title{
+    font-family:Rubik Burned;
+    font-size: 400%;
+    text-align: left;
+}
 
-    #artist{
-        display: flexbox;
-        flex-wrap: wrap;
-        text-align: right;
-        right:-3%;
-        font-size: 250%;
-        list-style-type: none;
-        font-family:Rubik Burned;
+#artist{
+    display: flexbox;
+    flex-wrap: wrap;
+    text-align: right;
+    right: -3%;
+    font-size: 250%;
+    list-style-type: none;
+    font-family: Rubik Burned;
 }
 
 #cover{
@@ -39,7 +40,6 @@ body{
 h3{
     text-align: center;
     font-size: 600%;
-    margin-bottom: -1%;
     font-family: Rubik Burned;
 }
 
@@ -65,4 +65,12 @@ h4{
 .album-image{
     width: 20em;
     margin-bottom: 2%;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.5);
+    /*font-family: Rubik Burned;*/
+    font-size: 1em;
 }
