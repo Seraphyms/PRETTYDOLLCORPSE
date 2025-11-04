@@ -105,31 +105,31 @@ h4{
     margin: 2em;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     gap: 80px;
     margin-bottom: 0em;
 }
 
 .album-image{
-    width: 15em;
-    height: 15em;
-    padding: 10px;
+    width: 20em;
+    height: 20em;
+    padding: 20px;
 }
 
 #Red {
-    border: 3px solid transparent;
+    border: 5px solid transparent;
     border-image: linear-gradient(45deg,#84201c, #3f3444);        
     border-image-slice: 1;
 }
 
 #Belli {
-    border: 3px solid transparent;
+    border: 5px solid transparent;
     border-image: linear-gradient(-45deg, #341519, #132f3a);
     border-image-slice: 1;
 }
 
 #Eco {
-    border: 3px solid transparent;
+    border: 5px solid transparent;
     border-image: linear-gradient(45deg, #545454, #000000);
     border-image-slice: 1;
 }
