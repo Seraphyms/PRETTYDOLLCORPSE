@@ -74,8 +74,34 @@ body{
     border-image: linear-gradient(45deg,#84201c, #3f3444);
     border-image-slice: 1;
     padding: 20px;*/
+    border: 15px double black;
     margin-top: 3%;
-    animation: glitch 10s steps(1, end) infinite;
+    animation: glitch-flash 2s infinite steps(1, end);
+}
+
+#cover::before, #cover::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(Pics/cover.jpg) no-repeat center / cover;
+  mix-blend-mode: screen;
+  opacity: 0.8;
+  animation: glitch-move 1.5s infinite steps(2, end);
+}
+
+#cover::before {
+  filter: hue-rotate(310deg) saturate(2);
+  transform: translate(0);
+  animation: glitch-r 1.5s infinite steps(2, end);
+}
+
+#cover::after {
+    filter: hue-rotate(190deg) saturate(2);
+    transform: translate(0);
+    animation: glitch-b 1.5s infinite steps(2, end);
 }
 
 h3{
@@ -143,41 +169,63 @@ footer {
     font-size: 1em;
 }
 
-    @keyframes glitch {
-    /* état normal (par défaut) */
+@keyframes glitch-r {
+  0% { transform: translate(0); opacity: 0.9; }
+  10% { transform: translate(-3px, -2px); }
+  20% { transform: translate(3px, 2px); }
+  30% { transform: translate(-1px, 1px); }
+  40%, 100% { transform: translate(0); }
+}
+
+@keyframes glitch-b {
+  0% { transform: translate(0); opacity: 0.9; }
+  10% { transform: translate(2px, 2px); }
+  20% { transform: translate(-2px, -1px); }
+  30% { transform: translate(1px, -1px); }
+  40%, 100% { transform: translate(0); }
+}
+
+/* Flash rapide sur l’image principale */
+@keyframes glitch-flash {
+  0%, 90%, 100% { filter: contrast(1.1) brightness(1.05); }
+  92% { filter: contrast(1.8) brightness(1.5) saturate(1.8); }
+  94% { filter: contrast(0.8) brightness(0.9); }
+}
+
+/* Léger mouvement général */
+@keyframes glitch-move {
+  0%, 100% { transform: translate(0); }
+  25% { transform: translate(1px, 1px); }
+  50% { transform: translate(-1px, 0); }
+  75% { transform: translate(0, -1px); }
+}
+
+    /*@keyframes glitch {
     0%, 11%, 20%, 33%, 65%, 73%, 96%, 100% {
-      transform: none;
-      filter: brightness(0.8) contrast(1.5);
+      filter: brightness(40%);
       opacity: 1;
     }
     10% {
-      transform: translate(6px, -3px);
-      filter: brightness(0.7) contrast(2.3) hue-rotate(12deg);
+      filter: brightness(0.7) opacity(0.7) hue-rotate(20deg);
     }
 
     19% {
-      transform: translate(-4px, -2px) rotate(-0.6deg);
-      filter: brightness(0.9) contrast(2) hue-rotate(-8deg);
+      filter: brightness(2) hue-rotate(-8deg)  opacity(0.3) ;
     }
 
     32% {
-      transform: translate(-6px, 2px) rotate(1deg);
-      filter: brightness(1) contrast(2.1) hue-rotate(-12deg);
+      filter: brightness(1) opacity(1) hue-rotate(-12deg);
     }
 
 
     64% {
-      transform: translate(5px, 0px);
-      filter: brightness(0.7) contrast(2.4) hue-rotate(10deg);
+      filter: brightness(0.7) opacity(0.3) hue-rotate(10deg);
     }
 
     72% {
-      transform: translate(-3px, 4px);
-      filter: brightness(0.6) contrast(2.5) hue-rotate(-15deg);
+      filter: brightness(2) opacity(1) hue-rotate(-15deg);
     }
 
     95% {
-      transform: translate(4px, -1px);
-      filter: brightness(1) contrast(2.1) hue-rotate(6deg);
-    }
-}
+      filter: brightness(2) opacity(0.7) hue-rotate(6deg);
+    }*/
